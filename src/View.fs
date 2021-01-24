@@ -1,11 +1,32 @@
-namespace Cinema
+namespace Katjanewski
 
 module View =
   open Fable.React
   open Fable.React.Props
 
+  open Katjanewski.Views.Navigation
+  open Katjanewski.Views.Hero
+  open Katjanewski.Views.Impressum
+  open Katjanewski.Views.Solution
+  open Katjanewski.Views.Food
+  open Katjanewski.Views.Footer
+          
 
-  let render (model:Model) dispatch =
-    div [ Class "h-screen flex flex-col items-center justify-start bg-gradient-to-br from-gray-700 to-gray-900" ]
-      [ model.Text |> ofString
-      ]
+  let landingpage model dispatch =
+    // div []
+    //   [ 
+        hero model dispatch
+        // solution model dispatch
+        // food model dispatch
+        // impressum model dispatch 
+        // ]
+
+
+  let render (model:Model) dispatch =  
+    div [ Class "font-sans"; Id "top"
+          OnClick (fun _ -> Clicked_Anywhere |> dispatch )]    
+      [ 
+        // navbar model dispatch
+        landingpage model dispatch
+        // footer model dispatch 
+        ]

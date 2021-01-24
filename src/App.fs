@@ -4,12 +4,17 @@ open Elmish
 open Elmish.React
 open Fable.Core.JsInterop
 
-open Cinema
+open Katjanewski
+open Fable.Core
 
 importAll "./style.css"
 
 
-Program.mkSimple State.init State.update View.render
+[<Emit("scrollIntoView($0)")>]
+let scrollIntoView (t : string) = jsNative
+
+
+Program.mkProgram State.init State.update View.render
 |> Program.withReactSynchronous "elmish-app"
 #if DEBUG
 |> Program.withConsoleTrace
