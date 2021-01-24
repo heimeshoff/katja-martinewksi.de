@@ -14,7 +14,7 @@ export function anchor(dispatch, label) {
 export function links(model, dispatch) {
     return react.createElement("div", {
         className: "flex flex-col lg:flex-row items-stretch justify-end",
-    }, anchor(dispatch, "Coaching"), anchor(dispatch, "Training"), anchor(dispatch, "Solution focused"), anchor(dispatch, "Kontakt"));
+    }, anchor(dispatch, "Coaching \u0026 Training"), anchor(dispatch, "Solution focused"), anchor(dispatch, "About me"), anchor(dispatch, "Kontakt"));
 }
 
 export function navbar(model, dispatch) {

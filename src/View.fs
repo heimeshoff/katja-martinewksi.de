@@ -6,19 +6,23 @@ module View =
 
   open Katjanewski.Views.Navigation
   open Katjanewski.Views.Hero
+  open Katjanewski.Views.Coaching
+  open Katjanewski.Views.Solution_focused
+  open Katjanewski.Views.About
   open Katjanewski.Views.Impressum
-  open Katjanewski.Views.Solution
-  open Katjanewski.Views.Food
   open Katjanewski.Views.Footer
           
+  let grey_background c = [ c ] |> div [ Class "w-full bg-gray-100 flex justify-center py-6 " ]
+      
+
 
   let landingpage model dispatch =
-    div []
+    div [ Class "flex flex-col justify-start items-center space-y-16" ]
       [ 
         hero model dispatch
-        solution model dispatch
-        food model dispatch
-        impressum model dispatch 
+        coaching model dispatch
+        solution_focused model dispatch |> grey_background
+        about model dispatch
       ]
 
 
@@ -28,5 +32,5 @@ module View =
       [ 
         navbar model dispatch
         landingpage model dispatch
-        footer model dispatch 
+        footer model dispatch |> grey_background
       ]

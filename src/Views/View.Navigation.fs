@@ -14,9 +14,9 @@ let anchor dispatch (label:String) =
 
 let links model dispatch =
   div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
-    [ "Coaching" |> anchor dispatch
-      "Training" |> anchor dispatch
+    [ "Coaching & Training" |> anchor dispatch
       "Solution focused" |> anchor dispatch
+      "About me" |> anchor dispatch
       "Kontakt" |> anchor dispatch  ]
 
 
