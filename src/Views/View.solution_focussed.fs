@@ -5,7 +5,7 @@ open Fable.React.Props
 
 
 let solution model dispatch =
-  div [ Class "content" ; Id "solution focussed"]
+  div [ Class "content" ; Id "solution focused"]
     [ div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2 flex flex-col md:flex-row items-start justify-between" ]
         [ div [ Class "md:w-1/2" ]
             [ h2 [ ]

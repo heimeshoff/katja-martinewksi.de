@@ -5,7 +5,7 @@ open Fable.React.Props
 
 
 let food model dispatch =
-  div [ Class "content" ; Id "food saving"]
+  div [ Class "content" ; Id "training"]
     [ div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2 flex flex-col md:flex-row items-start justify-between" ]
         [ div [ Class "m-4 md:w-1/3" ]
             [ img [ Src "/img/food.png" ] ]

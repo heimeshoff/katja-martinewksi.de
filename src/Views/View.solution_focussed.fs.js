@@ -3,7 +3,7 @@ import * as react from "react";
 export function solution(model, dispatch) {
     return react.createElement("div", {
         className: "content",
-        id: "solution focussed",
+        id: "solution focused",
     }, react.createElement("div", {
         className: "my-8 w-4/5 lg:w-2/3 xl:w-1/2 flex flex-col md:flex-row items-start justify-between",
     }, react.createElement("div", {

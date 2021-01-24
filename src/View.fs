@@ -13,20 +13,20 @@ module View =
           
 
   let landingpage model dispatch =
-    // div []
-    //   [ 
+    div []
+      [ 
         hero model dispatch
-        // solution model dispatch
-        // food model dispatch
-        // impressum model dispatch 
-        // ]
+        solution model dispatch
+        food model dispatch
+        impressum model dispatch 
+      ]
 
 
   let render (model:Model) dispatch =  
-    div [ Class "font-sans"; Id "top"
+    div [ Class "relative font-sans"; Id "top"
           OnClick (fun _ -> Clicked_Anywhere |> dispatch )]    
       [ 
-        // navbar model dispatch
+        navbar model dispatch
         landingpage model dispatch
-        // footer model dispatch 
-        ]
+        footer model dispatch 
+      ]
