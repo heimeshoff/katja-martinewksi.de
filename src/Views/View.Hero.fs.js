@@ -2,9 +2,9 @@ import * as react from "react";
 
 export function hero(model, dispatch) {
     return react.createElement("div", {
-        className: "relative w-full max-h-screen flex flex-col items-center",
+        className: "relative w-full h-screen flex flex-col items-center",
     }, react.createElement("img", {
-        className: "w-full max-h-screen object-cover",
+        className: "w-full h-screen object-cover",
         src: "img/katja.jpg",
     }), react.createElement("div", {
         className: "absolute inset-0 flex flex-col items-center justify-end",

@@ -5,10 +5,10 @@ open Fable.React.Props
 
 
 let hero model dispatch =
-    div [ Class "relative w-full max-h-screen flex flex-col items-center" ]
+    div [ Class "relative w-full h-screen flex flex-col items-center" ]
       [ 
         img 
-          [ Class "w-full max-h-screen object-cover"
+          [ Class "w-full h-screen object-cover"
             Src "img/katja.jpg" ]
 
         div [ Class "absolute inset-0 flex flex-col items-center justify-end"]
