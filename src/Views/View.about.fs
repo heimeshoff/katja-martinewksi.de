@@ -13,7 +13,7 @@ let about model dispatch =
                 [ str "About me"]
               p [ Class "pr-4 text-justify" ]
                 [ str "Die Promotion im Fachgebiet Chemie lehrte mir eine wissenschaftliche Denkweise. Die Weiterbildungen zur Führungskraft weckten schließlich mein starkes Interesse am Thema Kommunikation und Gruppendynamiken. Und diese Begeisterung möchte ich mit anderen WissenschaftlerInnen teilen. Gerade als Wissenschaftlerin ist mir Gleichberechtigung ein großes Anliegen. Ich unterstütze ihr Unternehmen gerne bei der Entwicklung eines Bewusstseins im Sinne der Gleichberechtigung." ] ]
-          div [ Class "md:w-1/2" ]
+          div [ Class "md:w-1/2"; Id "kontakt" ]
             [ div [ Class "font-bold text-gray-700 text-3xl" ]
                 [ str "Kontakt"]
               p [ Class "pr-4 text-justify" ]

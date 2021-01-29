@@ -14,6 +14,7 @@ export function about(model, dispatch) {
         className: "pr-4 text-justify",
     }, "Die Promotion im Fachgebiet Chemie lehrte mir eine wissenschaftliche Denkweise. Die Weiterbildungen zur Führungskraft weckten schließlich mein starkes Interesse am Thema Kommunikation und Gruppendynamiken. Und diese Begeisterung möchte ich mit anderen WissenschaftlerInnen teilen. Gerade als Wissenschaftlerin ist mir Gleichberechtigung ein großes Anliegen. Ich unterstütze ihr Unternehmen gerne bei der Entwicklung eines Bewusstseins im Sinne der Gleichberechtigung.")), react.createElement("div", {
         className: "md:w-1/2",
+        id: "kontakt",
     }, react.createElement("div", {
         className: "font-bold text-gray-700 text-3xl",
     }, "Kontakt"), react.createElement("p", {
