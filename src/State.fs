@@ -27,7 +27,7 @@ module State =
         model, Cmd.none
         
     | ScrollTo s ->
-        model , Cmd.OfFunc.attempt scrollIntoView s OnLogError
+        { model with menu_open = false } , Cmd.OfFunc.attempt scrollIntoView s OnLogError
     
     | Navigate_to p ->
         { model with currentPage = p ; menu_open = false }, Cmd.ofMsg (ScrollTo "top")

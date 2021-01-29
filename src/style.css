@@ -6,6 +6,7 @@
 
 
 .glass {
+  @apply bg-opacity-50;
   backdrop-filter: blur( 10.0px );
   -webkit-backdrop-filter: blur( 10.0px );
 }

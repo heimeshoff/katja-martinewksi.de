@@ -15,7 +15,6 @@ module View =
   let grey_background c = [ c ] |> div [ Class "w-full bg-gray-100 flex justify-center py-6 " ]
       
 
-
   let landingpage model dispatch =
     div [ Class "flex flex-col justify-start items-center space-y-16" ]
       [ 
@@ -27,7 +26,7 @@ module View =
 
 
   let render (model:Model) dispatch =  
-    div [ Class "relative font-sans"; Id "top"
+    div [ Class ""; Id "top"
           OnClick (fun _ -> Clicked_Anywhere |> dispatch )]    
       [ 
         navbar model dispatch
