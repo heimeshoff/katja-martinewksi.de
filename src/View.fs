@@ -14,14 +14,21 @@ module View =
           
   let grey_background c = [ c ] |> div [ Class "w-full bg-gray-100 flex justify-center py-6 " ]
       
+  let container id color items =
+    div [ Class (sprintf "w-full flex justify-center %s" color)] 
+      [
+        div [ Class "w-full lg:w-2/3 flex flex-col lg:flex-row items-center justify-center lg:space-x-4 space-y-4 lg:space-y-0  p-8 %s" ; Id id ]
+          items
+      ]
+      
 
   let landingpage model dispatch =
-    div [ Class "flex flex-col justify-start items-center space-y-16" ]
+    div [ Class "flex flex-col justify-start items-center" ]
       [ 
         hero model dispatch
-        coaching model dispatch
-        solution_focused model dispatch |> grey_background
-        about model dispatch
+        coaching model dispatch |> container "coaching & training" "bg-white"
+        solution_focused model dispatch |> container "solution focused" "bg-gray-100"
+        about model dispatch |> container "about me" "bg-white"
       ]
 
 
